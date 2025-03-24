@@ -1,0 +1,284 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8f0f8;
+    /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 5v1H0V0h5z'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Title styling */
+.title-text {
+    font-family: 'Young Serif', serif;
+    font-size: 5.5rem;
+    /* Young Serif looks better at its natural weight */
+    font-weight: 400;
+    color: #0d6efd;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: calc(2vh + 0.5rem) 0;
+    /* Tighter line height for headings */
+    line-height: 1.1;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Audio player styling */
+audio {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Audio container styling */
+.audio-container {
+    /* Harsh, offset shadow */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    /* Thicker borders */
+    border: 2px solid #212529;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Button icon styling */
+.btn i {
+    font-size: 1.2rem;
+}
+
+/* Pre-formatted text styling */
+pre {
+    font-family: 'Outfit', sans-serif;
+    white-space: pre-wrap;
+    font-size: 1rem;
+    /* Increased for better readability of lecture text */
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Loading animation */
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Slow spinner animation */
+.slow-spinner {
+    color: #0d6efd;
+    /* Slowed down from default 0.75s */
+    animation-duration: 2s !important;
+}
+
+/* Form elements - adjust for readability */
+input,
+button,
+.btn {
+    font-family: 'Outfit', sans-serif;
+    /* Slightly increased spacing for buttons */
+    letter-spacing: 0.5px;
+}
+
+/* Clean container styling */
+.clean-container {
+    padding: calc(5vh + 1rem) 2rem;
+    margin: calc(3vh) auto;
+    max-width: 800px;
+}
+
+/* Clean input styling */
+.clean-input {
+    font-family: 'Outfit', serif;
+    display: block;
+    width: 100%;
+    /* Reduced top/bottom padding */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #4c5d6c;
+    background-color: transparent;
+    border: none;
+    /* Thicker bottom border */
+    border-bottom: 1.5px solid #0d6efd;
+    transition: border-color 0.15s ease-in-out, height 0.2s ease;
+    letter-spacing: 0.5px;
+    /* Center text by default when not focused */
+    text-align: center;
+    /* Allow natural height */
+    min-height: auto;
+    /* Initial height for single line */
+    height: 2.5rem;
+    /* Prevent manual resizing */
+    resize: none;
+    /* Hide scrollbar */
+    overflow: hidden;
+}
+
+.clean-input:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: none;
+    /* Left-align text when focused */
+    text-align: left;
+}
+
+.clean-input:invalid,
+.clean-input.is-invalid {
+    border-color: #adb5bd;
+}
+
+.clean-input::placeholder {
+    color: #7a8b9f;
+    opacity: 1;
+    text-align: center;
+}
+
+.clean-input:focus::placeholder {
+    opacity: 0.8;
+    /* Left-align placeholder when focused */
+    text-align: left;
+}
+
+/* Card styling */
+.card {
+    /* Square corners for cards */
+    border-radius: 0;
+    /* Harsh, offset shadow */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+    /* Thicker borders */
+    border: 2px solid #212529;
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.text-wrap {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Button styling */
+.btn {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-width: 2px;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-success {
+    background-color: #19c877;
+    border-color: #19c877;
+    border-width: 2px;
+}
+
+.btn-success:hover {
+    background-color: #189d5f;
+    border-color: #189d5f;
+}
+
+.btn-secondary {
+    background-color: #c8d0db;
+    border-color: #c8d0db;
+    border-width: 2px;
+}
+
+.btn-secondary:hover {
+    background-color: #9ea1a1;
+    border-color: #9ea1a1;
+}
+
+/* Form styling */
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .title-text {
+        /* Slightly smaller on mobile */
+        font-size: 4rem;
+        /* Adjusted vertical padding for smaller screens */
+        padding: calc(1.5vh + 0.5rem) 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .clean-input {
+        font-size: 1rem;
+    }
+
+    .col-md-8 {
+        padding: 0 1rem;
+    }
+
+    .clean-container {
+        /* Adjusted vertical padding for smaller screens */
+        padding: calc(4vh + 0.5rem) 1.5rem;
+        margin: calc(2vh) auto;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-text {
+        font-size: 3.5rem;
+        /* Further reduced vertical padding for smallest screens */
+        padding: calc(1vh + 0.5rem) 0;
+    }
+
+    .clean-input {
+        font-size: 0.8rem;
+    }
+
+    .clean-container {
+        /* Further adjusted vertical padding for smallest screens */
+        padding: calc(3vh + 0.5rem) 1rem;
+        margin: calc(1.5vh) auto;
+    }
+}
